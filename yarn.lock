@@ -948,7 +948,7 @@ async@2.6.1:
   dependencies:
     lodash "^4.17.10"
 
-async@^2.6, async@^2.6.0, async@^2.6.1, async@^2.6.3, async@~2.6.1:
+async@^2.0.1, async@^2.6, async@^2.6.0, async@^2.6.1, async@^2.6.3, async@~2.6.1:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
   integrity sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
@@ -2061,6 +2061,16 @@ etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
+
+eureka-js-client@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/eureka-js-client/-/eureka-js-client-4.5.0.tgz#45d46935dfe81e41b0aa26420dc92d54ef97b0c4"
+  integrity sha512-vnkrw7UPAHdJbTsjpgVJfqjr3FFJnEJNq4acRbc6s8qTAhO0LhTDkN4a/1TUYlsr480x0PWjA6jzqVGCjyWE7g==
+  dependencies:
+    async "^2.0.1"
+    js-yaml "^3.3.1"
+    lodash "^4.13.1"
+    request "^2.83.0"
 
 eventemitter2@5.0.1, eventemitter2@^5.0.1:
   version "5.0.1"
@@ -3533,7 +3543,7 @@ js-tokens@^4.0.0:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-yaml@^3.13.1:
+js-yaml@^3.13.1, js-yaml@^3.3.1:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.0.tgz#a7a34170f26a21bb162424d8adacb4113a69e482"
   integrity sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
@@ -3746,7 +3756,7 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash@^4.17.10, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15:
+lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
@@ -4881,7 +4891,7 @@ request-promise-native@^1.0.8:
     stealthy-require "^1.1.1"
     tough-cookie "^2.3.3"
 
-request@^2.88.2:
+request@^2.83.0, request@^2.88.2:
   version "2.88.2"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
   integrity sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw==

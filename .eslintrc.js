@@ -5,7 +5,9 @@ module.exports = {
     "jest/globals": true,
   },
   "extends": [
-    "airbnb-base"
+    "airbnb-base",
+    "plugin:jest/recommended",
+    "plugin:jest/style"
   ],
   "plugins": ["jest"],
   "parserOptions": {

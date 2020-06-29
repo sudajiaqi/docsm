@@ -1,0 +1,23 @@
+{
+	"ENV": "production",
+	"APP": "frontendserv",
+	"PROTOCOL": "https",
+	"PORT": 10220,
+	"DOMAIN": "www.xtransfer.cn",
+	"CDN_DOMAIN": "cdn-cn.xtransfer.cn",
+	"COOKIE_NAME": "xtransfer_t",
+	"COOKIE_RETOKEN_NAME": "xtransfer_retoken",
+	"COOKIE_SAVE_DOMAIN": "xtransfer.cn",
+	"GATEWAY_API_URL": "//www.xtransfer.cn",
+	"CDN_URL": "//cdn-cn.xtransfer.cn",
+	"NEWS_CDN_URL": "//cdn-cn2.xtransfer.cn",
+	"WEBSOCKET_API_URL": "wss://api.dae.org",
+	"QQ_APP_ID": "101411806",
+	"WECHAT_APP_ID": "wx31a07b0f6146888a",
+	"SERVICE_URL": ["http://172.19.53.25:40001/eureka/apps/", "http://172.19.53.26:40001/eureka/apps/"],
+	"GOOGLE_ANALYTICS_ID": "UA-102808397-1",
+	"BAIDU_ID": "ddde86e12f2543393d92ff237b7253ed",
+	"LATEST_APP_VERSION": "2.1.5",
+	"JOIN_STR": "xt",
+	"MOCK_WEIXIN": false
+}
