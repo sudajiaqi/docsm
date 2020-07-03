@@ -2,8 +2,7 @@
 import { Eureka } from 'eureka-client'
 import { APP, PORT, SERVICE_URL } from 'constants/env'
 import Log4js from '../../log'
-
-const interfaces = require('os').networkInterfaces()
+import getIPAddress from "./ipUtil";
 
 const logger = Log4js.getLogger('eurekaClient')
 
@@ -25,28 +24,10 @@ const resolveConfigOpts = (ENV_CONFIG_OPTS) => {
   return configOpts
 }
 
-export const getIpAddress = () => {
-  for (const devName in interfaces) {
-    const iface = interfaces[devName]
-    if (!iface) {
-      logger.error('failed to get network interface : null')
-      return null
-    }
-    for (let i = 0; i < iface.length; i++) {
-      const alias = iface[i];
-      if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal) {
-        logger.info('succeed to get network interface, ip address is ', alias.address)
-        return alias.address;
-      }
-    }
-  }
-  logger.error('failed to get network interface : no network interfaces')
-  return null
-}
 
 const CONFIG_OPTS = resolveConfigOpts(require('process').env.CONFIG_OPTS)
 
-const HOST = CONFIG_OPTS['eureka.instance.ip'] || getIpAddress()
+const HOST = CONFIG_OPTS['eureka.instance.ip'] || getIPAddress()
 
 logger.info('Initial eurekaClient ... HOST is ', HOST)
 

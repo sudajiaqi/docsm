@@ -1,0 +1,7 @@
+{
+  "apollo": {
+    "configServerUrl": "http://139.217.110.117:40003",
+    "clusterName": "dev-default",
+    "authToken": "helloapollo"
+  }
+}

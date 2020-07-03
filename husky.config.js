@@ -4,6 +4,8 @@ module.exports = {
   hooks: {
     'pre-commit': tasks([
       'yarn lint',
+    ]),
+    'pre-push': tasks([
       'yarn test',
     ]),
   },

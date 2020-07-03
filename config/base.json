@@ -1,0 +1,11 @@
+{
+  "apollo": {
+    "appId": "docsm",
+    "namespaces": [
+      "DevCenter.eureka-common",
+      "DevCenter.atta-common",
+      "DevCenter.atta-cache",
+      "application"
+    ]
+  }
+}
